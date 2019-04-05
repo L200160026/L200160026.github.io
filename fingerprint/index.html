@@ -44,6 +44,7 @@
     height: 100px;
     position: relative;
     padding: 10px 15px 0;
+    overflow: auto;
 }
 
 /* untuk menghilangkan padding pada .panel-heading */
@@ -150,7 +151,7 @@
                 <div class="post-author">
                   <img class="author-photo" height="32" src="../dist/img/profile.jpg" width="32">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
-                    Preview
+                    Preview Information
                   </button>
                 </div>
             </div>
@@ -172,7 +173,7 @@
                 <div class="post-author">
                   <img class="author-photo" height="32" src="../dist/img/profile.jpg" width="32">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">
-                    Preview
+                    Preview Information
                   </button>
                 </div>
             </div>
@@ -194,7 +195,7 @@
                 <div class="post-author">
                   <img class="author-photo" height="32" src="../dist/img/profile.jpg" width="32">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
-                    Preview
+                    Preview Information
                   </button>
                 </div>
             </div>
@@ -216,7 +217,7 @@
                 <div class="post-author">
                   <img class="author-photo" height="32" src="../dist/img/profile.jpg" width="32">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">
-                    Preview
+                    Preview Information
                   </button>
                 </div>
             </div>
@@ -231,11 +232,21 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Default Modal</h4>
+                <h4 class="modal-title">Original Image</h4>
               </div>
               <div class="modal-body">
                 <img src="img/original.png">
               </div>
+
+              <div class="container" style="width: auto;">
+                <h5><b>Keterangan :</b></h5>
+                <ol class="post-title">
+                  <li>Gambar original hasil scan</li>
+                  <li>Gambar Jernih tidak banyak noise</li>
+                  <li>Gunung dan lembah telihat jelas</li>
+                </ol>
+              </div>
+
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
               </div>
@@ -252,11 +263,22 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Default Modal</h4>
+                <h4 class="modal-title">Filter Gabor</h4>
               </div>
               <div class="modal-body">
                 <img src="img/filter.png">
               </div>
+
+              <div class="container" style="width: auto;">
+                <h5><b>Keterangan :</b></h5>
+                <ol class="post-title">
+                  <li>Pada tahap ini telah berhasil dilakukan tahap normalisasi</li>
+                  <li>Segmentasi berhasil dilakukan karena dapat diliat background sudah dipisahkan</li>
+                  <li>Gambar terlihat berubah menjadi hitam dan putih karena proses frekuensi</li>
+                  <li>Gambar berhasil terfilter secara baik dilihat dari skala gambar yang sama</li>
+                </ol>
+              </div>
+
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
               </div>
@@ -272,11 +294,21 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Default Modal</h4>
+                <h4 class="modal-title">Thining</h4>
               </div>
               <div class="modal-body">
                 <img src="img/thining.gif">
               </div>
+
+              <div class="container" style="width: auto;">
+                <h5><b>Keterangan :</b></h5>
+                <ol class="post-title">
+                  <li>Pada proses ini dilakukan pengecilan garis hitam menjadi 1 pixel</li>
+                  <li>Garis yang dihasilkan dari proses thining sesuai dengan proses gabor</li>
+                  <li>Sudah terlihar bifurcation dan ending</li>
+                </ol>
+              </div>
+
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
               </div>
@@ -292,11 +324,23 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Default Modal</h4>
+                <h4 class="modal-title">Extract Minutiae</h4>
               </div>
               <div class="modal-body">
                 <img src="img/crossover.png">
               </div>
+
+              <div class="container" style="width: auto;">
+                <h5><b>Keterangan :</b></h5>
+                <ol class="post-title">
+                  <li>Ekstrak Minutiae merupakan proses terakhir untuk menentukan bifurcation dan ending</li>
+                  <li>Bifurcation berwarna hijau dan ending berwarna merah</li>
+                  <li>Hasil proses berhasil, dilihat dari tepatnya program dalam menentukan bifurcation dan ending</li>
+                  <li>Jumlah Ending (Merah) : 389</li>
+                  <li>Jumlah Bifurcation (Hijau) : 257</li>
+                </ol>
+              </div>
+
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
               </div>
